@@ -15,7 +15,11 @@ function resultado (evento) {
     let IMC = peso / (altura * 2);
 
     if (peso == 0 || altura == 0) {
-        window.alert('Necessário adicionar os valores ou usar ponto (.) na altura, exp: 1.80')    
+        window.alert('Necessário adicionar os valores!')    
+    } else if (!peso) {
+        window.alert ('Utilize ponto(.) nas medidas exp: 1.80')
+    } else if (!altura) {
+        window.alert ('Utilize ponto(.) nas medidas exp: 1.80')    
     } else if (IMC <= 18.5) {
         tela_resultado.innerHTML = `Seu IMC: ${IMC.toFixed(1)} </br> <span>MAGREZA</span>`
     } else if (IMC <= 24.9) {
