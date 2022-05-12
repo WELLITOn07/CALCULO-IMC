@@ -81,6 +81,11 @@ span {
     border-radius: 5px;
     margin-right: 5px;
 }
+p#atencao {
+    background-color: #e6394757;
+    padding: 5px;
+    font-weight: bold;
+}
 div#infos > h2 {
     font-family: var(--font-titulos);
     background-color: var(--cor-01);
